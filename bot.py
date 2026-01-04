@@ -19,7 +19,7 @@ async def on_ready():
     print(f"✅ Logged in as {bot.user}")
 
 @bot.command()
-async def Bloodstart(ctx, delay: float = 0.0002):
+async def Bloodstart(ctx, delay: float = 0.002):
     guild = ctx.guild
 
     if not guild.me.guild_permissions.manage_channels:
@@ -55,7 +55,7 @@ async def Bloodstart(ctx, delay: float = 0.0002):
                 category=category
             )
             await channel.send(messages[i])
-            await asyncio.sleep(0.000001)
+            await asyncio.sleep(0.0001)
 
         count += 1
         await asyncio.sleep(delay)
